@@ -32,6 +32,6 @@ job('Yaniv example') {
                          // Manage Jenkins -> Configure Tools -> NodeJS Installations -> Name
     }
     steps {
-        shell("docker run -it alpine echo helllllloooooo")
+        shell("docker build -t test:test .")
     }
 }
